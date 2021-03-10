@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AllTeams from "../AllTeams/AllTeams";
+import Header from "../Header/Header";
+import leagueLogo from "../../images/leagueLogo.svg";
 // import data from "../../fakeData/fakedata.json";
 import "./Home.css";
 
@@ -21,6 +23,7 @@ const Home = () => {
   console.log(teams);
   return (
     <div>
+      <Header logo={leagueLogo}></Header>
       <div className="row">
         {teams.map((team) => (
           <AllTeams team={team}></AllTeams>

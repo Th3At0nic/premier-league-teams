@@ -1,0 +1,10 @@
+.text-secondary {
+  font-size: 100px;
+  margin-right: 20px;
+}
+.text-info {
+  font-size: 90px;
+}
+.text-danger {
+  font-size: 70px;
+}
