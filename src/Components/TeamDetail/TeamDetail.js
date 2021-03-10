@@ -36,6 +36,7 @@ const TeamDetail = () => {
     strDescriptionEN,
     strFacebook,
     strInstagram,
+    strCountry,
     strTeamBadge,
     strTwitter,
     strYoutube,
