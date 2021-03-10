@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./TeamDetail.css";
 import { useParams } from "react-router";
-import maleImage from "../../images/male.png";
-import femaleImage from "../../images/female.png";
+import maleImage from "../../images/boys.png";
+import femaleImage from "../../images/girls.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faVenusMars,
@@ -71,28 +71,40 @@ const TeamDetail = () => {
           <div className="row col-md-6 col-sm-12 order-first">
             <div className="col p-5">
               <div className="mb-4">
-                <h1>{strTeam}</h1>
+                <h1>
+                  <b>{strTeam}</b>
+                </h1>
               </div>
               <div className="team-intro">
                 <p>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} /> Founded:{" "}
-                  {intFormedYear}
+                  <b>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} /> Founded:{" "}
+                    {intFormedYear}
+                  </b>
                 </p>
                 <p>
-                  <FontAwesomeIcon icon={faFlag} /> Country: {strCountry}
+                  <b>
+                    <FontAwesomeIcon icon={faFlag} /> Country: {strCountry}
+                  </b>
                 </p>
                 <p>
-                  <FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}
+                  <b>
+                    <FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}
+                  </b>
                 </p>
                 <p>
-                  {isGender2} Gender: {isGender}
+                  <b>
+                    {isGender2} Gender: {isGender}
+                  </b>
                 </p>
                 <br />
                 <button
                   className="btn btn-primary mt-1 mb-1 ms-5 me-5 p-2"
                   onClick={() => setGender(!gender)}
                 >
-                  <FontAwesomeIcon icon={faVenusMars} /> Change Gender
+                  <b>
+                    <FontAwesomeIcon icon={faVenusMars} /> Change Gender
+                  </b>
                 </button>
               </div>
             </div>
