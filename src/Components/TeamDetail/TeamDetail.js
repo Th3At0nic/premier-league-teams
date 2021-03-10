@@ -64,9 +64,6 @@ const TeamDetail = () => {
     <div>
       <Header logo={strTeamBadge}></Header>
       <div className=" container">
-        {/* <header className="banner-img">
-        <img className="team-banner" src={strTeamBanner} alt="" />
-      </header> */}
         <div className="team-history col-md-12">
           <div className="row col-md-6 col-sm-12 order-first">
             <div className="col p-5">

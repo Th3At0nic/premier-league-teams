@@ -5,7 +5,7 @@
   margin: 14px;
   padding: 25px 5px 25px 5px;
   text-align: center;
-  background-color: white;
+  background-color: antiquewhite;
 }
 .team-box img {
   width: 200px;
@@ -13,4 +13,9 @@
 .team-box button {
   width: 102px;
   height: 40px;
+}
+.team-box:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  background-color: white;
 }
