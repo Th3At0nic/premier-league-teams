@@ -16,6 +16,7 @@ import {
   faFacebook,
   faInstagram,
   faTwitter,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import Header from "../Header/Header";
 
@@ -38,7 +39,6 @@ const TeamDetail = () => {
     strCountry,
     strDescriptionEN,
     strFacebook,
-    strGender,
     strInstagram,
     strStadium,
     strStadiumThumb,
@@ -46,6 +46,7 @@ const TeamDetail = () => {
     strTeamBanner,
     strTeamLogo,
     strTwitter,
+    strYoutube,
     strSport,
     strTeamFanart3,
     strTeamFanart4,
@@ -161,6 +162,11 @@ const TeamDetail = () => {
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </span>{" "}
+            <span>
+              <a href={`https://${strYoutube}`} target="_blank">
+                <FontAwesomeIcon icon={faYoutube} />
+              </a>
+            </span>
           </h1>
         </footer>
       </div>
