@@ -137,22 +137,38 @@ const TeamDetail = () => {
         <footer className="text-center pb-5">
           <h1>
             <span>
-              <a href={`https://${strFacebook}`} target="_blank">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`https://${strFacebook}`}
+              >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </span>{" "}
             <span>
-              <a href={`https://${strTwitter}`} target="_blank">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`https://${strTwitter}`}
+              >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
             </span>{" "}
             <span>
-              <a href={`https://${strInstagram}`} target="_blank">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`https://${strInstagram}`}
+              >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </span>{" "}
             <span>
-              <a href={`https://${strYoutube}`} target="_blank">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`https://${strYoutube}`}
+              >
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
             </span>
