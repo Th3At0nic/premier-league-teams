@@ -32,26 +32,14 @@ const TeamDetail = () => {
   }, [id]);
   const {
     strTeam,
-    idLeague,
-    idTeam,
     intFormedYear,
-    intStadiumCapacity,
-    strCountry,
     strDescriptionEN,
     strFacebook,
     strInstagram,
-    strStadium,
-    strStadiumThumb,
     strTeamBadge,
-    strTeamBanner,
-    strTeamLogo,
     strTwitter,
     strYoutube,
     strSport,
-    strTeamFanart3,
-    strTeamFanart4,
-    strTeamFanart2,
-    strTeamFanart1,
   } = teamDetail;
 
   const [gender, setGender] = useState(true);
