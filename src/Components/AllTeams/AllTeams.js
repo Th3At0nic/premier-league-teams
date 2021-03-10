@@ -25,7 +25,6 @@ const AllTeams = (props) => {
     strSport,
   } = props.team;
 
-  console.log(strFacebook);
   return (
     <div className="team-box">
       <div>

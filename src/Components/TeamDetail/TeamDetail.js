@@ -3,9 +3,6 @@ import "./TeamDetail.css";
 import { useParams } from "react-router";
 import maleImage from "../../images/male.png";
 import femaleImage from "../../images/female.png";
-import facebookLogo from "../../images/Facebook.png";
-import twitterImage from "../../images/Twitter.png";
-import youTubeImage from "../../images/youTube.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faVenusMars,
@@ -14,10 +11,12 @@ import {
   faFutbol,
   faMars,
   faVenus,
+} from "@fortawesome/free-solid-svg-icons";
+import {
   faFacebook,
   faInstagram,
   faTwitter,
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-brands-svg-icons";
 
 const TeamDetail = () => {
   const [teamDetail, setTeamDetail] = useState({});
@@ -29,7 +28,6 @@ const TeamDetail = () => {
       .then((res) => res.json())
       .then((data) => setTeamDetail(data.teams[0]));
   }, [id]);
-  //   console.log(teamDetail.strTeam);
   const {
     strTeam,
     idLeague,
@@ -133,9 +131,25 @@ const TeamDetail = () => {
       </div>
       <br />
       <br />
-      <div className="">
-        <img src={femaleImage} alt="" />{" "}
-      </div>
+      <footer className="text-center">
+        <h1>
+          <span>
+            <a href={`https://${strFacebook}`} target="_blank">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+          </span>{" "}
+          <span>
+            <a href={`https://${strTwitter}`} target="_blank">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+          </span>{" "}
+          <span>
+            <a href={`https://${strInstagram}`} target="_blank">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+          </span>{" "}
+        </h1>
+      </footer>
     </div>
   );
 };
