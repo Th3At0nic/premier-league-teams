@@ -55,7 +55,7 @@ const TeamDetail = () => {
       <Header logo={strTeamBadge}></Header>
       <div className=" container">
         <div className="team-history row">
-          <div className="team-intro ">
+          <div className="team-intro">
             <h1 className="mb-4">
               <b>{strTeam}</b>
             </h1>
@@ -74,7 +74,6 @@ const TeamDetail = () => {
                 {isGender2} Gender: {isGender}
               </p>
             </b>
-            <br />
             <button
               className="btn btn-primary mt-1 mb-1 ms-5 me-5 p-2"
               onClick={() => setGender(!gender)}
