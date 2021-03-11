@@ -59,27 +59,21 @@ const TeamDetail = () => {
             <h1 className="mb-4">
               <b>{strTeam}</b>
             </h1>
-            <p>
-              <b>
+            <b>
+              <p>
                 <FontAwesomeIcon icon={faMapMarkerAlt} /> Founded:{" "}
                 {intFormedYear}
-              </b>
-            </p>
-            <p>
-              <b>
+              </p>
+              <p>
                 <FontAwesomeIcon icon={faFlag} /> Country: {strCountry}
-              </b>
-            </p>
-            <p>
-              <b>
+              </p>
+              <p>
                 <FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}
-              </b>
-            </p>
-            <p>
-              <b>
+              </p>
+              <p>
                 {isGender2} Gender: {isGender}
-              </b>
-            </p>
+              </p>
+            </b>
             <br />
             <button
               className="btn btn-primary mt-1 mb-1 ms-5 me-5 p-2"
