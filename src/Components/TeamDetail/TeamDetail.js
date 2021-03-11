@@ -54,49 +54,44 @@ const TeamDetail = () => {
     <div>
       <Header logo={strTeamBadge}></Header>
       <div className=" container">
-        <div className="team-history col-md-12">
-          <div className="row col-md-6 col-sm-12 order-first">
-            <div className="col p-5">
-              <div className="mb-4">
-                <h1>
-                  <b>{strTeam}</b>
-                </h1>
-              </div>
-              <div className="team-intro">
-                <p>
-                  <b>
-                    <FontAwesomeIcon icon={faMapMarkerAlt} /> Founded:{" "}
-                    {intFormedYear}
-                  </b>
-                </p>
-                <p>
-                  <b>
-                    <FontAwesomeIcon icon={faFlag} /> Country: {strCountry}
-                  </b>
-                </p>
-                <p>
-                  <b>
-                    <FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}
-                  </b>
-                </p>
-                <p>
-                  <b>
-                    {isGender2} Gender: {isGender}
-                  </b>
-                </p>
-                <br />
-                <button
-                  className="btn btn-primary mt-1 mb-1 ms-5 me-5 p-2"
-                  onClick={() => setGender(!gender)}
-                >
-                  <b>
-                    <FontAwesomeIcon icon={faVenusMars} /> Change Gender
-                  </b>
-                </button>
-              </div>
-            </div>
+        <div className="team-history row">
+          <div className="team-intro ">
+            <h1 className="mb-4">
+              <b>{strTeam}</b>
+            </h1>
+            <p>
+              <b>
+                <FontAwesomeIcon icon={faMapMarkerAlt} /> Founded:{" "}
+                {intFormedYear}
+              </b>
+            </p>
+            <p>
+              <b>
+                <FontAwesomeIcon icon={faFlag} /> Country: {strCountry}
+              </b>
+            </p>
+            <p>
+              <b>
+                <FontAwesomeIcon icon={faFutbol} /> Sport Type: {strSport}
+              </b>
+            </p>
+            <p>
+              <b>
+                {isGender2} Gender: {isGender}
+              </b>
+            </p>
+            <br />
+            <button
+              className="btn btn-primary mt-1 mb-1 ms-5 me-5 p-2"
+              onClick={() => setGender(!gender)}
+            >
+              <b>
+                <FontAwesomeIcon icon={faVenusMars} /> Change Gender
+              </b>
+            </button>
           </div>
-          <div className="col-md-6 row col-sm-12 order-last mt-5">
+
+          <div className="col m-2 row justify-content-end">
             {gender ? (
               <img src={maleImage} alt="" />
             ) : (
@@ -106,7 +101,7 @@ const TeamDetail = () => {
         </div>
         <br />
         <br />
-        <div className="text-white p-3">
+        <div className="text-white p-3 mt-2 text-justify">
           <p>
             <b>{strDescriptionEN}</b>{" "}
           </p>

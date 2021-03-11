@@ -10,7 +10,7 @@ const AllTeams = (props) => {
   return (
     <div className="m-3 mt-4">
       <div className="team-box">
-        <div>
+        <div className="mb-3">
           <img src={strTeamBadge} alt="404,sorry team logo not found" />
         </div>
         <div>

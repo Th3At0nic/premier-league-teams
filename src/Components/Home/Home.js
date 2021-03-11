@@ -17,7 +17,9 @@ const Home = () => {
 
   return (
     <div>
-      <Header logo={leagueLogo}></Header>
+      <div >
+        <Header logo={leagueLogo}></Header>
+      </div>
       <div className="row">
         {teams.map((team) => (
           <AllTeams team={team}></AllTeams>
