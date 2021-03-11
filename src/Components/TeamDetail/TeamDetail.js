@@ -55,7 +55,7 @@ const TeamDetail = () => {
       <Header logo={strTeamBadge}></Header>
       <div className=" container">
         <div className="team-history row">
-          <div className="team-intro ">
+          <div className="team-intro col">
             <h1 className="mb-4">
               <b>{strTeam}</b>
             </h1>
