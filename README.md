@@ -1,5 +1,4 @@
-# LIVE SITE: https://quirky-mcnulty-a4c07b.netlify.app/
-
+# LIVE SITE: https://premier-league-allteams.netlify.app
 This project was bootstrapped with Create React App.
 
 # Available Scripts
